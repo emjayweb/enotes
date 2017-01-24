@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<HTML><head>
+<link href="styles/main.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.js"></script>
+</head><body>
+<div id="maincontainer">
+	<div id="heather">
+		<h2>E-Notes</h2>
+	</div>
+	<div id="lessoncontainer">
+		<div id="velkomen">
+			<h4>Aloha all. This is Moya's notes page on electronics, so interested parties 
+			have an understanding on what I've been teaching myself.</h4>
+			<h4>The materials on this page represent some of my information sources, and 
+			thus reflect my understanding on the topic.</h4>
+			<h4>This is also a page where I experiment with
+			the Vue.js framework.</h4>
+		</div>
+		<div class="asection">
+			<h4>Info Links</h4>
+		</div>
+		<div class="lesson" v-for="source in sources">
+			<div class="lessonpart">
+				<h5>{{ source.topic }}</h5>
+				<div v-html="source.attribute" class="element"></div>
+				<p><a v-bind:href="source.gotfrom" target="_blank">Link to source</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="asection">
+		<h4>Tools</h4>
+		<my-basicohm></my-basicohm>
+	</div>
+</div>
+<script src="scripts/mainscript.js"></script>
+</body></HTML>
