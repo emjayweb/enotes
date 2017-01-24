@@ -1,6 +1,9 @@
 new Vue ({
 	el: '#maincontainer',
 	data: {
+		basicohmslaw_volts: '',
+		basicohmslaw_amps: '',
+		basicohmslaw_ohms: '',
 		sources: [
 			{ 
 				topic: "01. Multimeter Basics", 
@@ -33,5 +36,19 @@ new Vue ({
 				gotfrom: "https://www.youtube.com/watch?v=InJhgwmj2So"
 			}
 		]
+	},
+	methods: {
+		basicohmslaw: function(){
+			if ( this.basicohmslaw_volts === '' ){
+				this.basicohmslaw_volts = this.basicohmslaw_amps * this.basicohmslaw_ohms;
+			}
+			else if ( this.basicohmslaw_amps === '' ){
+				this.basicohmslaw_amps = this.basicohmslaw_volts / this.basicohmslaw_ohms;
+			}
+			else if ( this.basicohmslaw_ohms === '' ){
+				this.basicohmslaw_ohms = this.basicohmslaw_volts / this.basicohmslaw_amps;
+			}			
+		}
 	}
 });
+

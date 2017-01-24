@@ -12,7 +12,7 @@
 			<h4>Aloha all. This is Moya's notes page on electronics, so interested parties 
 			have an understanding on what I've been teaching myself.</h4>
 			<h4>The materials on this page represent some of my information sources, and 
-			thus reflect my understanding on the topic.</h4>
+			thus accurately reflect my understanding of the topic.</h4>
 			<h4>This is also a page where I experiment with
 			the Vue.js framework.</h4>
 		</div>
@@ -27,9 +27,19 @@
 			</div>
 		</div>
 	</div>
-	<div class="asection">
-		<h4>Tools</h4>
-		<my-basicohm></my-basicohm>
+	<div class="asection"><h4>Notes</h4></div>
+	<div class="tools">
+		<div class="atool">
+			<div id="basicohmslaw" class="arow">
+				<h4>Basic Ohms Law Formula</h4>
+				<h5>Formula: V = IR</h5>
+				<p>Note: Simply input two values and hit "Calculate." The third value will show in the missing input field.</p>
+					<input v-model="basicohmslaw_volts" type="text" placeholder="Voltage (in volts)" />
+					<input v-model="basicohmslaw_amps" type="text" placeholder="Current (in amps)" />
+					<input v-model="basicohmslaw_ohms" type="text" placeholder="Resistance (in ohms)"/>
+					<button v-on:click="basicohmslaw">Calculate</button>
+			</div>
+		</div>
 	</div>
 </div>
 <script src="scripts/mainscript.js"></script>
