@@ -39,6 +39,16 @@ new Vue ({
 				topic: "07. Capacitors and Multimeters",
 				attribute:"<iframe src='https://www.youtube.com/embed/o6kPLx2AmFo'allowfullscreen></iframe>",
 				gotfrom: "https://www.youtube.com/watch?v=o6kPLx2AmFo"
+			},
+			{
+				topic: "08. Inductor",
+				attribute: "<iframe src='https://www.youtube.com/embed/STDlCdZnIsw' allowfullscreen></iframe>",
+				gotfrom: "https://www.youtube.com/watch?v=STDlCdZnIsw"
+			},
+			{
+				topic: "09. Capacitor",
+				attribute: "<iframe src='https://www.youtube.com/embed/ZYH9dGl4gUE' allowfullscreen></iframe>",
+				gotfrom: "https://www.youtube.com/watch?v=ZYH9dGl4gUE"
 			}
 		]
 	},
