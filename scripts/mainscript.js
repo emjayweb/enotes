@@ -34,6 +34,11 @@ new Vue ({
 				topic: "06. Multimeter In-Depth Part 3",
 				attribute: "<iframe src='https://www.youtube.com/embed/InJhgwmj2So?list=PL4A0248AE2B0DF1A3' allowfullscreen></iframe>",
 				gotfrom: "https://www.youtube.com/watch?v=InJhgwmj2So"
+			},
+			{
+				topic: "07. Capacitors and Multimeters",
+				attribute:"<iframe src='https://www.youtube.com/embed/o6kPLx2AmFo'allowfullscreen></iframe>",
+				gotfrom: "https://www.youtube.com/watch?v=o6kPLx2AmFo"
 			}
 		]
 	},
